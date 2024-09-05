@@ -13,7 +13,7 @@ env.config();
 app.use(express.json());
 connectDB();
 
-app.use("/auth", authRoutes);
+app.use("/", authRoutes);
 app.use(auth);
 app.use("/books", bookRoutes);
 app.use("/borrowing", borrowingRoutes);

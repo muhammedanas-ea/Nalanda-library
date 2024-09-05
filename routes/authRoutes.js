@@ -3,7 +3,7 @@ import { userRegistration, userLogin } from "../controller/authController.js";
 const router = express.Router();
 
 router.post("/register", userRegistration);
-router.post("/login", userLogin);
+router.post("/", userLogin);
 
 
 export default router;
